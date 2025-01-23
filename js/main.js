@@ -9,20 +9,20 @@ window.addEventListener("load", function () {
   });
   //   swiper
   const swTour = new Swiper(".sw-tour", {
-    slidesPerView: 1.2, //모바일에서 보이는 갯수(390px을 따로 적어줄 필요가 없다.)
+    slidesPerView: 1.2, //모바일에서 보이는 갯수(모바일사이즈 390px을 따로 적어줄 필요가 없다.)
     spaceBetween: 20,
     grid: {
       rows: 3,
       fill: "row",
     },
     breakpoints: {
-        480: {
-            spaceBetween: 26,
-            slidesPerView: 2,
-            grid: {
-              rows: 3,
-            },
-          },
+      480: {
+        spaceBetween: 26,
+        slidesPerView: 2,
+        grid: {
+          rows: 3,
+        },
+      },
       1024: {
         slidesPerView: 2.5,
         spaceBetween: 26,
