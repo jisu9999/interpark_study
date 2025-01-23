@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* 상단 */
+.header {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header .inner {
+  padding: 30px 0;
+}
+.header-up {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: antiquewhite; */
+  height: 50px;
+}
+.header-up-left {
+  width: 50%;
+  display: flex;
+  gap: 6%;
+}
+/* logo */
+.logo {
+  display: block;
+  width: 118px;
+  height: 50px;
+  background: url("/images/logo.svg") no-repeat center / contain;
+  /* background-size: contain; */
+}
+/* 검색 */
+.search {
+  width: 70%;
+  height: 40px;
+  max-width: 455px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.search input {
+  width: 400px;
+  height: 40px;
+  border: 0;
+  outline: none; /* input창 클릭했을 때 생기는 선 */
+  padding: 15px 0;
+}
+.search input::placeholder {
+  color: #a2a2a2;
+  font-size: 13px;
+}
+.header-up-right {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.member-list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%;
+  text-align: center;
+  /* background-color: tomato; */
+}
+.member-list > li {
+  position: relative;
+  /* width: calc(100% / 3); */
+}
+.member-list > li > a {
+  font-size: 15px;
+  color: #111;
+}
+.member-list > li:last-child {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.mypage-list {
+  display: none;
+  position: absolute;
+  top: 33px;
+  right: 0;
+  width: 130px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  border-radius: 13px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.icon-arrow {
+  display: block;
+  width: 8px;
+  height: 5px;
+  background: url(../images/arrow_pc.svg) no-repeat center;
+}
+/* js로 classList add */
+.mypage-list.showMypage {
+  display: block;
+}
+.mb-mypage {
+  display: none;
+}
+.header-down {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  height: 60px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600px;
+  /* background-color: rgb(159, 244, 244); */
+}
+.service-list {
+  display: flex;
+  gap: 23px;
+}
+.service-list li a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.service-list li a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.service-menu li{
+    position: relative;
+}
+.service-menu li a{
+    padding: 0 12px;
+    /* border-left: 2px solid #a2a2a2; */
+}
+.service-menu li a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
