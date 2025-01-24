@@ -24,14 +24,14 @@ window.addEventListener("load", function () {
         },
       },
       1024: {
-        slidesPerView: 2.5,
+        slidesPerView: 3,
         spaceBetween: 26,
         grid: {
           rows: 3,
         },
       },
       1280: {
-        slidesPerView: 3,
+        slidesPerView: 3.5,
         spaceBetween: 26,
         slidesPerGroup: 2,
         grid: {
@@ -39,5 +39,43 @@ window.addEventListener("load", function () {
         },
       },
     },
+    navigation: {
+      nextEl: ".tour .sw-next",
+      prevEl: ".tour .sw-prev",
+    },
+  });
+  const swShopping = new Swiper(".sw-shopping", {
+    slidesPerView: 1.3,
+    spaceBetween: 15,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    breakpoints: {
+      480: {
+        spaceBetween: 26,
+        slidesPerView: 2,
+        slidesPerGroup: 3,
+      },
+      768: {
+        spaceBetween: 26,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        grid: {
+          rows: 3,
+        },
+      },
+
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    },
+    navigation: {
+      nextEl: ".shopping .sw-next",
+      prevEl: ".shopping .sw-prev",
+    },
   });
 });
+

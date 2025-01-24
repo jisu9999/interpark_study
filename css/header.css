@@ -16,6 +16,7 @@
 }
 .header-up-left {
   width: 50%;
+  min-width: 450px;
   display: flex;
   gap: 6%;
 }
@@ -31,6 +32,7 @@
 .search {
   width: 70%;
   height: 40px;
+  min-width: 300px;
   max-width: 455px;
   background-color: #fff;
   border-radius: 25px;
@@ -56,6 +58,7 @@
 }
 .member-list {
   width: 100%;
+  min-width: 200px;
   display: flex;
   justify-content: flex-end;
   gap: 5%;

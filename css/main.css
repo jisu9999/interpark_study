@@ -16,27 +16,120 @@ a {
   text-decoration: none;
   color: #333;
 }
+html{
+  font: 10px;
+}
 body {
   font-family: "Pretendard-Regular";
 }
 /* 공통클래스 */
-.inner{
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-    /* background-color: pink; */
+.inner {
+  position: relative;
+  display: block;
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  /* background-color: pink; */
 }
-.wrap{
-    position: relative;
-    display: block;
+.wrap {
+  position: relative;
+  display: block;
 }
 /* section 공통클래스 */
-.wrap section{
-    padding: 30px 0 90px 0;
+.section-slide{
+  position: relative;
+}
+.wrap section {
+  padding: 30px 0 90px 0;
+}
+.section-top {
+  text-align: center;
+}
+.section-top > h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-top > p {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* 섹션 안에 btns */
+.section-top .btns{
+  max-width: 550px;
+  margin: 25px auto;
+  background-color: aquamarine;
+}
+.section-top .btns a{
+  display: inline-block;
+  padding: 3% 4%;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #333;
+  background-color: #fff;
+}
+.btns-active{
+  background-color: #333 !important;
+  color: #fff !important;
+}
+/* swiper 버튼 */
+.sw-bt{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  font-size: 0;
+  z-index: 99;
+}
+.sw-bt::before{
+  content: "";
+  width: 8px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 4px);
+  background: url("../images/slider_arrow.svg") no-repeat center;
+}
+.sw-prev{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50% , -50%);
+}
+.sw-prev::before{
+  transform: scaleX(-100%); /*이미지 180도 반전*/
+}
+.sw-next{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50% , -50%);
+}
+/* 하단 버튼 */
+.section-bottom{
+  margin-top: 25px;
+  text-align: center;
+}
+.bt-link-shop{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 56px;
+  padding: 0 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-top: 20px;
 }
 /* 퀵메뉴 */
-.quick-menu{
-    display: none;
+.quick-menu {
+  display: none;
 }
